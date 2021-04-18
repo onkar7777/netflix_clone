@@ -1,13 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(41, 40, 40) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.top_header{
+  height: 470px;
+  /* border: 2px solid red; */
+  background-size: cover;
+ 
+}
+.top_header nav{
+  display: flex;
+  justify-content: space-between;
+}
+.top_header nav .logo{
+    height: 60px;
+    cursor: pointer;
+}
+.top_header nav .avtar{
+  height: 30px;
+  cursor: pointer;
+}
+.top_header .header_details h1{
+  color: #FFF;
+  padding-left: 37px;
+  font-weight: 900;
+}
+.top_header .header_details{
+  padding-top: 100px;
+}
+.play_btn{
+  padding: 5px 24px;
+  border: none;
+  margin-left: 41px;
+  background: #65656591;
+  color: #FFF;
+  border-radius: 2px;
+}
+.my_list_btn{
+  padding: 5px 24px;
+  border: none;
+  margin-left: 20px;
+  background: #65656591;
+  color: #FFF;
+  border-radius: 2px;
+}
+.overview p {
+  color: #FFF;
+  padding: 10px 40px;
+}
+.row{
+  width: 100%;
+}
+.moview_view{
+  max-height: 170px;
+  transition: transform .2s; 
+  width: 128px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.moview_row{
+  padding: 20px;
+}
+.movie_compo{
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.moview_view:hover{
+  transform: scale(1.1);
+}
+.feature_image{
+  height: 100%;
+  width: 100%;
 }
